@@ -66,7 +66,7 @@ const team = [
 
 console.log(team);
 
-//! 
+//! Ciclo
 
 
 
@@ -77,7 +77,12 @@ teamMembersDom.appendChild(ulElement);
 
 for (let index = 0; index < team.length; index++) {
     console.log(team[index]);
+    //! Creazione li per ogni elemento dell Array
     liElement = document.createElement("li");
-    liElement.textContent = team[index];
+    //! Trasforma in stringa il contentuto dell Array
+    let stringa = JSON.stringify(team[index])
+    console.log(stringa)
+    //! Aggiunge Stringa al Dom
+    liElement.textContent = stringa;
     ulElement.appendChild(liElement);
 }
