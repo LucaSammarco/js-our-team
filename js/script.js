@@ -68,7 +68,17 @@ console.log(team);
 
 //! 
 
+
+
+const teamMembersDom = document.getElementById("teamMembers");
+const ulElement = document.createElement("ul");
+teamMembersDom.appendChild(ulElement);
+
+
 for (let index = 0; index < team.length; index++) {
     console.log(team[index]);
+    liElement = document.createElement("li");
+
     
+    ulElement.appendChild(liElement);
 }
