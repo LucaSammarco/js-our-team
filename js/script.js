@@ -78,7 +78,6 @@ teamMembersDom.appendChild(ulElement);
 for (let index = 0; index < team.length; index++) {
     console.log(team[index]);
     liElement = document.createElement("li");
-
-    
+    liElement.textContent = team[index];
     ulElement.appendChild(liElement);
 }
