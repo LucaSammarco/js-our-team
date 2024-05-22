@@ -29,6 +29,7 @@
 // Scott Estrada	Developer	scott-estrada-developer.jpg
 // Barbara Ramos	Graphic Designer	barbara-ramos-graphic-designer.jpg
 
+//! Creazione Array
 
 const team = [
     {
@@ -64,3 +65,10 @@ const team = [
 ];
 
 console.log(team);
+
+//! 
+
+for (let index = 0; index < team.length; index++) {
+    console.log(team[index]);
+    
+}
